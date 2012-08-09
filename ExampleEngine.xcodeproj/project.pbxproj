@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7C1B5415D3942C006C41D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE7C1B5315D3942C006C41D6 /* README.md */; };
 		DE9136B115D3927F0061C249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B015D3927F0061C249 /* UIKit.framework */; };
 		DE9136B315D3927F0061C249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B215D3927F0061C249 /* Foundation.framework */; };
 		DE9136B515D3927F0061C249 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B415D3927F0061C249 /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE7C1B5315D3942C006C41D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DE9136AC15D3927F0061C249 /* ExampleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9136B015D3927F0061C249 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE9136B215D3927F0061C249 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +78,7 @@
 		DE9136A115D3927F0061C249 = {
 			isa = PBXGroup;
 			children = (
+				DE7C1B5315D3942C006C41D6 /* README.md */,
 				DE9136B615D3927F0061C249 /* ExampleEngine */,
 				DE9136CE15D3927F0061C249 /* ExampleEngineTests */,
 				DE9136AF15D3927F0061C249 /* Frameworks */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9136BB15D3927F0061C249 /* InfoPlist.strings in Resources */,
+				DE7C1B5415D3942C006C41D6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				DE9136DB15D3927F0061C249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE9136DC15D3927F0061C249 /* Build configuration list for PBXNativeTarget "ExampleEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				DE9136DE15D3927F0061C249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
