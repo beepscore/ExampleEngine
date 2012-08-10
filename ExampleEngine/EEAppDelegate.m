@@ -27,6 +27,7 @@
     [self.window makeKeyAndVisible];
     
     scene = [[EEScene alloc] init];
+    scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
     
     return YES;
 }

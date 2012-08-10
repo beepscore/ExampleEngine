@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
 @interface EEScene : NSObject
+
+@property GLKVector4 clearColor;
 
 -(void)update;
 
