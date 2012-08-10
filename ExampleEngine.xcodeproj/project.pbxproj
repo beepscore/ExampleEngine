@@ -87,9 +87,6 @@
 		DE9136A115D3927F0061C249 = {
 			isa = PBXGroup;
 			children = (
-				DE8F9CF515D4BE72001AA18F /* QuartzCore.framework */,
-				DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */,
-				DE8F9CF015D4BE50001AA18F /* GLKit.framework */,
 				DE7C1B5315D3942C006C41D6 /* README.md */,
 				DE9136B615D3927F0061C249 /* ExampleEngine */,
 				DE9136CE15D3927F0061C249 /* ExampleEngineTests */,
@@ -110,6 +107,9 @@
 		DE9136AF15D3927F0061C249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE8F9CF515D4BE72001AA18F /* QuartzCore.framework */,
+				DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */,
+				DE8F9CF015D4BE50001AA18F /* GLKit.framework */,
 				DE9136B015D3927F0061C249 /* UIKit.framework */,
 				DE9136B215D3927F0061C249 /* Foundation.framework */,
 				DE9136B415D3927F0061C249 /* CoreGraphics.framework */,
