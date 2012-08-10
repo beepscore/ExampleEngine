@@ -59,6 +59,7 @@
 
 #pragma mark - GLKViewControllerDelegate
 - (void)glkViewControllerUpdate:(GLKViewController *)controller {
+    // method for changing state (e.g. animations, physics simulations, game logic) 
     // NSLog(@"in glkViewControllerUpdate");
 }
 
@@ -66,6 +67,7 @@
 #pragma mark - GLKViewDelegate
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     // NSLog(@"in glkView:drawInRect:");
+    // r,g,b,alpha
     glClearColor(0.5, 0.5, 0.5, 0.5);
     glClear(GL_COLOR_BUFFER_BIT);
 }
