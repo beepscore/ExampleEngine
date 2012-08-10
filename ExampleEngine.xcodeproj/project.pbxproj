@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DE7C1B5415D3942C006C41D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE7C1B5315D3942C006C41D6 /* README.md */; };
+		DE8F9CF115D4BE50001AA18F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8F9CF015D4BE50001AA18F /* GLKit.framework */; };
+		DE8F9CF415D4BE61001AA18F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */; };
+		DE8F9CF615D4BE72001AA18F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8F9CF515D4BE72001AA18F /* QuartzCore.framework */; };
 		DE9136B115D3927F0061C249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B015D3927F0061C249 /* UIKit.framework */; };
 		DE9136B315D3927F0061C249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B215D3927F0061C249 /* Foundation.framework */; };
 		DE9136B515D3927F0061C249 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B415D3927F0061C249 /* CoreGraphics.framework */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		DE7C1B5315D3942C006C41D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DE8F9CF015D4BE50001AA18F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DE8F9CF515D4BE72001AA18F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DE9136AC15D3927F0061C249 /* ExampleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9136B015D3927F0061C249 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE9136B215D3927F0061C249 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8F9CF615D4BE72001AA18F /* QuartzCore.framework in Frameworks */,
+				DE8F9CF415D4BE61001AA18F /* OpenGLES.framework in Frameworks */,
+				DE8F9CF115D4BE50001AA18F /* GLKit.framework in Frameworks */,
 				DE9136B115D3927F0061C249 /* UIKit.framework in Frameworks */,
 				DE9136B315D3927F0061C249 /* Foundation.framework in Frameworks */,
 				DE9136B515D3927F0061C249 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +87,9 @@
 		DE9136A115D3927F0061C249 = {
 			isa = PBXGroup;
 			children = (
+				DE8F9CF515D4BE72001AA18F /* QuartzCore.framework */,
+				DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */,
+				DE8F9CF015D4BE50001AA18F /* GLKit.framework */,
 				DE7C1B5315D3942C006C41D6 /* README.md */,
 				DE9136B615D3927F0061C249 /* ExampleEngine */,
 				DE9136CE15D3927F0061C249 /* ExampleEngineTests */,
