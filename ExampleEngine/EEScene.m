@@ -10,10 +10,20 @@
 
 @implementation EEScene
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
+        self.effect = [[GLKBaseEffect alloc] init];
+    }
+    return self;
+}
+
 
 -(void)update {
     // NSLog(@"in EEScene's update");
 }
+
 
 -(void)render {
     // NSLog(@"in EEScene's render");
@@ -24,10 +34,7 @@
     // triangle about origin
     float vertices[] = {-1, -1, 1, -1, 0,  1};
     
-    // allocating effect each time through the loop is very inefficient
-    // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
-    GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
-    [effect prepareToDraw];
+    [self.effect prepareToDraw];
     
     // tell shader to use vertex position data
     glEnableVertexAttribArray(GLKVertexAttribPosition);
