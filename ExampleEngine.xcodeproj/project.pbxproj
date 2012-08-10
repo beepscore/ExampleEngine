@@ -22,6 +22,7 @@
 		DE9136CB15D3927F0061C249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9136B215D3927F0061C249 /* Foundation.framework */; };
 		DE9136D315D3927F0061C249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE9136D115D3927F0061C249 /* InfoPlist.strings */; };
 		DE9136D615D3927F0061C249 /* ExampleEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9136D515D3927F0061C249 /* ExampleEngineTests.m */; };
+		DEA0C89115D4EEE0005FCBCC /* EESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C89015D4EEE0005FCBCC /* EESceneController.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		DE9136D215D3927F0061C249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE9136D415D3927F0061C249 /* ExampleEngineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleEngineTests.h; sourceTree = "<group>"; };
 		DE9136D515D3927F0061C249 /* ExampleEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleEngineTests.m; sourceTree = "<group>"; };
+		DEA0C88F15D4EEE0005FCBCC /* EESceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESceneController.h; sourceTree = "<group>"; };
+		DEA0C89015D4EEE0005FCBCC /* EESceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESceneController.m; sourceTree = "<group>"; };
 		DECC4E0315D4D09700F4102C /* EEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEScene.h; sourceTree = "<group>"; };
 		DECC4E0415D4D09700F4102C /* EEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 				DE9136BF15D3927F0061C249 /* EEAppDelegate.h */,
 				DE9136C015D3927F0061C249 /* EEAppDelegate.m */,
 				DE9136B715D3927F0061C249 /* Supporting Files */,
+				DEA0C88F15D4EEE0005FCBCC /* EESceneController.h */,
+				DEA0C89015D4EEE0005FCBCC /* EESceneController.m */,
 			);
 			path = ExampleEngine;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				DE9136BD15D3927F0061C249 /* main.m in Sources */,
 				DE9136C115D3927F0061C249 /* EEAppDelegate.m in Sources */,
 				DECC4E0515D4D09700F4102C /* EEScene.m in Sources */,
+				DEA0C89115D4EEE0005FCBCC /* EESceneController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
