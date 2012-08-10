@@ -56,4 +56,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma mark - GLKViewControllerDelegate
+- (void)glkViewControllerUpdate:(GLKViewController *)controller {
+    // NSLog(@"in glkViewControllerUpdate");
+}
+
+
+#pragma mark - GLKViewDelegate
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+    // NSLog(@"in glkView:drawInRect:");
+    glClearColor(0.5, 0.5, 0.5, 0.5);
+    glClear(GL_COLOR_BUFFER_BIT);
+}
+
 @end
