@@ -32,12 +32,12 @@
 }
 
 
--(void)update {
+- (void)update {
     // NSLog(@"in EEScene's update");
 }
 
 
--(void)render {
+- (void)render {
     // NSLog(@"in EEScene's render");
     // r,g,b,alpha
     glClearColor(self.clearColor.r, self.clearColor.g, self.clearColor.b, self.clearColor.a);
