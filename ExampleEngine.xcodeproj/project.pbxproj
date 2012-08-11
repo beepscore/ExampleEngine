@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE6089DB15D71E0900802560 /* EETriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6089DA15D71E0900802560 /* EETriangle.m */; };
 		DE7C1B5415D3942C006C41D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE7C1B5315D3942C006C41D6 /* README.md */; };
 		DE8F9CF115D4BE50001AA18F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8F9CF015D4BE50001AA18F /* GLKit.framework */; };
 		DE8F9CF415D4BE61001AA18F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE6089D915D71E0900802560 /* EETriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EETriangle.h; sourceTree = "<group>"; };
+		DE6089DA15D71E0900802560 /* EETriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EETriangle.m; sourceTree = "<group>"; };
 		DE7C1B5315D3942C006C41D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DE8F9CF015D4BE50001AA18F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		DE8F9CF315D4BE61001AA18F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				DEA0C89015D4EEE0005FCBCC /* EESceneController.m */,
 				DEEFED8515D711B1008D6E6E /* EEShape.h */,
 				DEEFED8615D711B1008D6E6E /* EEShape.m */,
+				DE6089D915D71E0900802560 /* EETriangle.h */,
+				DE6089DA15D71E0900802560 /* EETriangle.m */,
 			);
 			path = ExampleEngine;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				DECC4E0515D4D09700F4102C /* EEScene.m in Sources */,
 				DEA0C89115D4EEE0005FCBCC /* EESceneController.m in Sources */,
 				DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */,
+				DE6089DB15D71E0900802560 /* EETriangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
