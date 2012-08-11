@@ -29,4 +29,16 @@
     return [vertexData mutableBytes];
 }
 
+- (void)render {
+    // tell shader to use vertex position data
+    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    
+    // second parameter vertex position is 2 dimensional
+    glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
+   
+    glDrawArrays(GL_TRIANGLES, 0, self.numVertices);
+    // clean up
+    glDisableVertexAttribArray(GLKVertexAttribPosition);
+}
+
 @end

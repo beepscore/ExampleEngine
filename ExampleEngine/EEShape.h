@@ -25,4 +25,6 @@
  */
 @property (readonly) GLKVector2 *vertices;
 
+- (void)render;
+
 @end
