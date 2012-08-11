@@ -22,6 +22,11 @@
     if (self) {
         // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
         effect = [[GLKBaseEffect alloc] init];
+        self.left = -3;
+        self.right = 3;
+        self.bottom = -2;
+        self.top = 2;
+        effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(self.left, self.right, self.bottom, self.top, 1, -1);
     }
     return self;
 }

@@ -11,6 +11,7 @@
 
 @interface EEScene : NSObject
 
+@property float left, right, bottom, top;
 @property GLKVector4 clearColor;
 
 -(void)update;
