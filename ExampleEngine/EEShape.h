@@ -1,13 +1,28 @@
-//
-//  EEShape.h
-//  ExampleEngine
-//
-//  Created by Steve Baker on 8/11/12.
-//  Copyright (c) 2012 Steve Baker. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
-@interface EEShape : NSObject
+/**
+ EEShape.h
+ ExampleEngine
+ 
+ @author Steve Baker Beepscore LLC
+ @date 11 Aug 2012
+ Copyright (c) 2012 Beepscore LLC. All rights reserved.
+ */
+
+/**
+ @brief EEShape acts as an abstract class and should be subclassed
+ */
+
+@interface EEShape : NSObject {
+}
+
+// subclasses should override numVertices to return positive int
+@property (readonly) int numVertices;
+
+/**
+ @brief vertices points to GLKVector2 struct
+ */
+@property (readonly) GLKVector2 *vertices;
 
 @end

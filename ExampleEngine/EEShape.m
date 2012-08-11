@@ -8,6 +8,25 @@
 
 #import "EEShape.h"
 
+@interface EEShape () {
+    NSMutableData *vertexData;
+}
+
+@end
+
 @implementation EEShape
+
+- (int)numVertices {
+    return 0;
+}
+
+
+- (GLKVector2 *)vertices {
+    if (nil == vertexData) {
+        // lazy instantiate
+        vertexData = [NSMutableData dataWithLength:sizeof(GLKVector2)*self.numVertices];
+    }
+    return [vertexData mutableBytes];
+}
 
 @end
