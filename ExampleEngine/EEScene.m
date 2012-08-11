@@ -43,9 +43,6 @@
     glClearColor(self.clearColor.r, self.clearColor.g, self.clearColor.b, self.clearColor.a);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    // triangle about origin
-    float vertices[] = {-1, -1, 1, -1, 0,  1};
-    
     [effect prepareToDraw];
 }
 
