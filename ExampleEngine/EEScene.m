@@ -8,13 +8,20 @@
 
 #import "EEScene.h"
 
+@interface EEScene () {
+    GLKBaseEffect *effect;
+}
+
+@end
+
+
 @implementation EEScene
 
 - (id)init {
     self = [super init];
     if (self) {
         // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
-        self.effect = [[GLKBaseEffect alloc] init];
+        effect = [[GLKBaseEffect alloc] init];
     }
     return self;
 }
@@ -34,7 +41,7 @@
     // triangle about origin
     float vertices[] = {-1, -1, 1, -1, 0,  1};
     
-    [self.effect prepareToDraw];
+    [effect prepareToDraw];
     
     // tell shader to use vertex position data
     glEnableVertexAttribArray(GLKVertexAttribPosition);

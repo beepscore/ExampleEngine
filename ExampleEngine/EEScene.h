@@ -12,7 +12,6 @@
 @interface EEScene : NSObject
 
 @property GLKVector4 clearColor;
-@property (nonatomic, strong) GLKBaseEffect *effect;
 
 -(void)update;
 
