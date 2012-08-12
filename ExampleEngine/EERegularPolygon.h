@@ -10,4 +10,12 @@
 
 @interface EERegularPolygon : EEShape
 
+@property(readonly) int numSides;
+@property float radius;
+
+/**
+ @brief init with aNumSides, corresponding property is numSides
+ */
+- (id)initWithNumSides:(int)aNumSides;
+
 @end
