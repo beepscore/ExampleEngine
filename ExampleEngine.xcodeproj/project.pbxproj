@@ -33,6 +33,7 @@
 		DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DEACE9D615D773C80062E593 /* EERegularPolygon.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 		DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFED8615D711B1008D6E6E /* EEShape.m */; };
+		DEFA130815D863F300C426D2 /* russian_rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = DEFA130715D863F300C426D2 /* russian_rocket.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		DECC4E0415D4D09700F4102C /* EEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEScene.m; sourceTree = "<group>"; };
 		DEEFED8515D711B1008D6E6E /* EEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEShape.h; sourceTree = "<group>"; };
 		DEEFED8615D711B1008D6E6E /* EEShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEShape.m; sourceTree = "<group>"; };
+		DEFA130715D863F300C426D2 /* russian_rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = russian_rocket.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		DE9136B615D3927F0061C249 /* ExampleEngine */ = {
 			isa = PBXGroup;
 			children = (
+				DEFA130615D863F300C426D2 /* Resources */,
 				DE279D1315D7575600245637 /* Shapes */,
 				DECC4E0115D4D00B00F4102C /* Scenes */,
 				DE9136BF15D3927F0061C249 /* EEAppDelegate.h */,
@@ -227,6 +230,14 @@
 				DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		DEFA130615D863F300C426D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEFA130715D863F300C426D2 /* russian_rocket.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +314,7 @@
 			files = (
 				DE9136BB15D3927F0061C249 /* InfoPlist.strings in Resources */,
 				DE7C1B5415D3942C006C41D6 /* README.md in Resources */,
+				DEFA130815D863F300C426D2 /* russian_rocket.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
