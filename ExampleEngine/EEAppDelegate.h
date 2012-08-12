@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-#import "TriangleScene.h"
+//#import "TriangleScene.h"
+#import "RectangleScene.h"
 
 @interface EEAppDelegate : UIResponder
     <UIApplicationDelegate, GLKViewDelegate, GLKViewControllerDelegate> {
-        TriangleScene *scene;
+//        TriangleScene *scene;
+        RectangleScene *scene;
     }
 
 @property (strong, nonatomic) UIWindow *window;
