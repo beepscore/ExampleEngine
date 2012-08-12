@@ -31,6 +31,7 @@
 		DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA238E815D750BD002534A4 /* RectangleScene.m */; };
 		DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */; };
 		DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DEACE9D615D773C80062E593 /* EERegularPolygon.m */; };
+		DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB6216215D86B65005AC4D1 /* LandscapeScene.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 		DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFED8615D711B1008D6E6E /* EEShape.m */; };
 		DEFA130815D863F300C426D2 /* russian_rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = DEFA130715D863F300C426D2 /* russian_rocket.png */; };
@@ -85,6 +86,8 @@
 		DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
 		DEACE9D515D773C80062E593 /* EERegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERegularPolygon.h; sourceTree = "<group>"; };
 		DEACE9D615D773C80062E593 /* EERegularPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EERegularPolygon.m; sourceTree = "<group>"; };
+		DEB6216115D86B65005AC4D1 /* LandscapeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeScene.h; sourceTree = "<group>"; };
+		DEB6216215D86B65005AC4D1 /* LandscapeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeScene.m; sourceTree = "<group>"; };
 		DECC4E0315D4D09700F4102C /* EEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEScene.h; sourceTree = "<group>"; };
 		DECC4E0415D4D09700F4102C /* EEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEScene.m; sourceTree = "<group>"; };
 		DEEFED8515D711B1008D6E6E /* EEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEShape.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				DEA238E815D750BD002534A4 /* RectangleScene.m */,
 				DEA3F1DA15D7209200BEF4E4 /* TriangleScene.h */,
 				DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */,
+				DEB6216115D86B65005AC4D1 /* LandscapeScene.h */,
+				DEB6216215D86B65005AC4D1 /* LandscapeScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */,
 				DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */,
 				DE5A24D815D77E250063CA0B /* HexagonScene.m in Sources */,
+				DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
