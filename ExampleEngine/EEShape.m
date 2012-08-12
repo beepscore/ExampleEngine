@@ -67,9 +67,12 @@
 
 - (void)setTextureImage:(UIImage *)image {
     NSError *error;
-    texture = [GLKTextureLoader textureWithCGImage:image.CGImage
-                                           options:nil
-                                             error:&error];
+    texture = [GLKTextureLoader
+               textureWithCGImage:image.CGImage
+               // options: use NSDictionay literal syntax
+               //options:@{GLKTextureLoaderOriginBottomLeft : @YES}
+               options:@{GLKTextureLoaderOriginBottomLeft : [NSNumber numberWithBool:YES]}
+               error:&error];
     if (error) {
         NSLog(@"Error loading texture from image: %@", error);
     }
