@@ -22,6 +22,7 @@
     if (self) {
         hexagon = [[EERegularPolygon alloc] initWithNumSides:6];
         hexagon.radius = 1;
+        hexagon.color = GLKVector4Make(0.9, 0.9, 0.1, 1.0);
     }
     return self;
 }

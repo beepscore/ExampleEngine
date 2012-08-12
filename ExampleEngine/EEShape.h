@@ -27,6 +27,11 @@
  */
 @property (readonly) GLKVector2 *vertices;
 
+/**
+ @brief color of the shape
+ */
+@property GLKVector4 color;
+
 - (void)renderInScene:(EEScene *)scene;
 
 @end

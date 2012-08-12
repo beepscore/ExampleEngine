@@ -44,6 +44,8 @@
 - (void)renderInScene:(EEScene *)scene {
     
     effect.transform.projectionMatrix = scene.projectionMatrix;
+    effect.useConstantColor = YES;
+    effect.constantColor = self.color;
     [effect prepareToDraw];
     
     // tell shader to use vertex position data
