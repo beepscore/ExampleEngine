@@ -10,4 +10,7 @@
 
 @interface EERectangle : EEShape
 
+@property float height;
+@property float width;
+
 @end
