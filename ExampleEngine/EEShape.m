@@ -36,7 +36,7 @@
     // second parameter vertex position is 2 dimensional
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
    
-    glDrawArrays(GL_TRIANGLES, 0, self.numVertices);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, self.numVertices);
     // clean up
     glDisableVertexAttribArray(GLKVertexAttribPosition);
 }
