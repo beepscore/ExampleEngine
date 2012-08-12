@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE279D1715D7578C00245637 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE279D1615D7578C00245637 /* EEEllipse.m */; };
 		DE6089DB15D71E0900802560 /* EETriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6089DA15D71E0900802560 /* EETriangle.m */; };
 		DE74A88E15D744AE00630A8D /* EERectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74A88D15D744AE00630A8D /* EERectangle.m */; };
 		DE7C1B5415D3942C006C41D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE7C1B5315D3942C006C41D6 /* README.md */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE279D1515D7578C00245637 /* EEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEllipse.h; sourceTree = "<group>"; };
+		DE279D1615D7578C00245637 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
 		DE6089D915D71E0900802560 /* EETriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EETriangle.h; sourceTree = "<group>"; };
 		DE6089DA15D71E0900802560 /* EETriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EETriangle.m; sourceTree = "<group>"; };
 		DE74A88C15D744AE00630A8D /* EERectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERectangle.h; sourceTree = "<group>"; };
@@ -105,6 +108,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE279D1315D7575600245637 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				DE279D1515D7578C00245637 /* EEEllipse.h */,
+				DE279D1615D7578C00245637 /* EEEllipse.m */,
+				DE74A88C15D744AE00630A8D /* EERectangle.h */,
+				DE74A88D15D744AE00630A8D /* EERectangle.m */,
+				DEEFED8515D711B1008D6E6E /* EEShape.h */,
+				DEEFED8615D711B1008D6E6E /* EEShape.m */,
+				DE6089D915D71E0900802560 /* EETriangle.h */,
+				DE6089DA15D71E0900802560 /* EETriangle.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
 		DE9136A115D3927F0061C249 = {
 			isa = PBXGroup;
 			children = (
@@ -142,18 +160,13 @@
 		DE9136B615D3927F0061C249 /* ExampleEngine */ = {
 			isa = PBXGroup;
 			children = (
+				DE279D1315D7575600245637 /* Shapes */,
 				DECC4E0115D4D00B00F4102C /* Scenes */,
 				DE9136BF15D3927F0061C249 /* EEAppDelegate.h */,
 				DE9136C015D3927F0061C249 /* EEAppDelegate.m */,
 				DE9136B715D3927F0061C249 /* Supporting Files */,
 				DEA0C88F15D4EEE0005FCBCC /* EESceneController.h */,
 				DEA0C89015D4EEE0005FCBCC /* EESceneController.m */,
-				DE74A88C15D744AE00630A8D /* EERectangle.h */,
-				DE74A88D15D744AE00630A8D /* EERectangle.m */,
-				DEEFED8515D711B1008D6E6E /* EEShape.h */,
-				DEEFED8615D711B1008D6E6E /* EEShape.m */,
-				DE6089D915D71E0900802560 /* EETriangle.h */,
-				DE6089DA15D71E0900802560 /* EETriangle.m */,
 			);
 			path = ExampleEngine;
 			sourceTree = "<group>";
@@ -318,6 +331,7 @@
 				DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */,
 				DE74A88E15D744AE00630A8D /* EERectangle.m in Sources */,
 				DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */,
+				DE279D1715D7578C00245637 /* EEEllipse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
