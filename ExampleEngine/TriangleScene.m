@@ -32,7 +32,7 @@
 
 - (void)render {
     [super render];
-    [triangle render];
+    [triangle renderInScene:self];
 }
 
 @end

@@ -13,6 +13,7 @@
 
 @property float left, right, bottom, top;
 @property GLKVector4 clearColor;
+@property (readonly) GLKMatrix4 projectionMatrix;
 
 - (void)update;
 

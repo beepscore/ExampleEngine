@@ -7,14 +7,26 @@
 //
 
 #import "EEShape.h"
+#import "EEScene.h"
 
 @interface EEShape () {
     NSMutableData *vertexData;
+    GLKBaseEffect *effect;
 }
 
 @end
 
 @implementation EEShape
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
+        effect = [[GLKBaseEffect alloc] init];
+    }
+    return self;
+}
+
 
 - (int)numVertices {
     return 0;
@@ -29,7 +41,11 @@
     return [vertexData mutableBytes];
 }
 
-- (void)render {
+- (void)renderInScene:(EEScene *)scene {
+    
+    effect.transform.projectionMatrix = scene.projectionMatrix;
+    [effect prepareToDraw];
+    
     // tell shader to use vertex position data
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     

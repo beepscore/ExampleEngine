@@ -29,7 +29,7 @@
 
 - (void)render {
     [super render];
-    [hexagon render];
+    [hexagon renderInScene:self];
 }
 
 @end

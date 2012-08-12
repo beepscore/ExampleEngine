@@ -9,9 +9,8 @@
 #import "EEScene.h"
 
 @interface EEScene () {
-    GLKBaseEffect *effect;
 }
-
+@property (readwrite) GLKMatrix4 projectionMatrix;
 @end
 
 
@@ -20,13 +19,11 @@
 - (id)init {
     self = [super init];
     if (self) {
-        // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
-        effect = [[GLKBaseEffect alloc] init];
         self.left = -3;
         self.right = 3;
         self.bottom = -2;
         self.top = 2;
-        effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(self.left, self.right, self.bottom, self.top, 1, -1);
+        self.projectionMatrix = GLKMatrix4MakeOrtho(self.left, self.right, self.bottom, self.top, 1, -1);
     }
     return self;
 }
@@ -42,8 +39,6 @@
     // r,g,b,alpha
     glClearColor(self.clearColor.r, self.clearColor.g, self.clearColor.b, self.clearColor.a);
     glClear(GL_COLOR_BUFFER_BIT);
-    
-    [effect prepareToDraw];
 }
 
 @end

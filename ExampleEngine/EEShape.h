@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+@class EEScene;
 #define M_TAU (2*M_PI)
 
 /**
@@ -26,6 +27,6 @@
  */
 @property (readonly) GLKVector2 *vertices;
 
-- (void)render;
+- (void)renderInScene:(EEScene *)scene;
 
 @end
