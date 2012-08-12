@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE279D1715D7578C00245637 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE279D1615D7578C00245637 /* EEEllipse.m */; };
+		DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B09DF15D75B680043E4BC /* EllipseScene.m */; };
 		DE6089DB15D71E0900802560 /* EETriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6089DA15D71E0900802560 /* EETriangle.m */; };
 		DE74A88E15D744AE00630A8D /* EERectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74A88D15D744AE00630A8D /* EERectangle.m */; };
 		DE7C1B5415D3942C006C41D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE7C1B5315D3942C006C41D6 /* README.md */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		DE279D1515D7578C00245637 /* EEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEllipse.h; sourceTree = "<group>"; };
 		DE279D1615D7578C00245637 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
+		DE5B09DE15D75B680043E4BC /* EllipseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipseScene.h; sourceTree = "<group>"; };
+		DE5B09DF15D75B680043E4BC /* EllipseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipseScene.m; sourceTree = "<group>"; };
 		DE6089D915D71E0900802560 /* EETriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EETriangle.h; sourceTree = "<group>"; };
 		DE6089DA15D71E0900802560 /* EETriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EETriangle.m; sourceTree = "<group>"; };
 		DE74A88C15D744AE00630A8D /* EERectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERectangle.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 			children = (
 				DECC4E0315D4D09700F4102C /* EEScene.h */,
 				DECC4E0415D4D09700F4102C /* EEScene.m */,
+				DE5B09DE15D75B680043E4BC /* EllipseScene.h */,
+				DE5B09DF15D75B680043E4BC /* EllipseScene.m */,
 				DEA238E715D750BD002534A4 /* RectangleScene.h */,
 				DEA238E815D750BD002534A4 /* RectangleScene.m */,
 				DEA3F1DA15D7209200BEF4E4 /* TriangleScene.h */,
@@ -332,6 +337,7 @@
 				DE74A88E15D744AE00630A8D /* EERectangle.m in Sources */,
 				DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */,
 				DE279D1715D7578C00245637 /* EEEllipse.m in Sources */,
+				DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
