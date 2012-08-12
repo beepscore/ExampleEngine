@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+#define M_TAU (2*M_PI)
 
 /**
  EEShape.h

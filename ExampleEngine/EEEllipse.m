@@ -9,7 +9,6 @@
 #import "EEEllipse.h"
 
 #define EE_ELLIPSE_RESOLUTION 64
-#define M_TAU (2*M_PI)
 
 @implementation EEEllipse
 
@@ -46,8 +45,8 @@
 
 - (void)updateVertices {
     for (int i = 0; i < EE_ELLIPSE_RESOLUTION; i++) {
-        float theta = ((float)i) / EE_ELLIPSE_RESOLUTION * M_TAU;
-        self.vertices[i] = GLKVector2Make(cos(theta)*self.radiusX, sin(theta)*self.radiusY);
+        float theta = ( (M_TAU / EE_ELLIPSE_RESOLUTION) * i);
+        self.vertices[i] = GLKVector2Make(self.radiusX*cos(theta), self.radiusY*sin(theta));
     }
 }
 
