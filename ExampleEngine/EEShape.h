@@ -13,7 +13,8 @@
  */
 
 /**
- @brief EEShape acts as a template, similar to a java abstract class. It should be subclassed.
+ @brief EEShape acts as a base class or template, similar to a java abstract class.
+ It should be subclassed.
  */
 
 @interface EEShape : NSObject {
@@ -43,6 +44,13 @@
  @brief vertex colors of the shape
  */
 @property (readonly) GLKVector4 *vertexColors;
+
+/**
+ @brief texture coordinates
+ */
+@property (readonly) GLKVector2 *textureCoordinates;
+
+- (void)setTextureImage:(UIImage *)image;
 
 - (void)renderInScene:(EEScene *)scene;
 

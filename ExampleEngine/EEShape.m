@@ -12,7 +12,9 @@
 @interface EEShape () {
     NSMutableData *vertexData;
     NSMutableData *vertexColorData;
+    NSMutableData *textureCoordinateData;
     GLKBaseEffect *effect;
+    GLKTextureInfo *texture;
 }
 
 @end
@@ -54,19 +56,48 @@
 }
 
 
+- (GLKVector2 *)textureCoordinates {
+    if (nil == textureCoordinateData) {
+        // lazy instantiate textureCoordinateData with sufficient length in bytes
+        textureCoordinateData = [NSMutableData dataWithLength:(sizeof(GLKVector2) * self.numVertices)];
+    }
+    return [textureCoordinateData mutableBytes];
+}
+
+
+- (void)setTextureImage:(UIImage *)image {
+    NSError *error;
+    texture = [GLKTextureLoader textureWithCGImage:image.CGImage
+                                           options:nil
+                                             error:&error];
+    if (error) {
+        NSLog(@"Error loading texture from image: %@", error);
+    }
+}
+
+
 - (void)renderInScene:(EEScene *)scene {
     
+    // TODO: Move effect creation out of frame loop.
     effect.transform.projectionMatrix = scene.projectionMatrix;
     
-    if (self.useConstantColor) {
-        effect.useConstantColor = YES;
-        effect.constantColor = self.color;
+    if (texture) {
+        effect.texture2d0.envMode = GLKTextureEnvModeReplace;
+        effect.texture2d0.target = GLKTextureTarget2D;
+        effect.texture2d0.name = texture.name;
+        glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+        glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 0, self.textureCoordinates);
     } else {
-        effect.useConstantColor = NO;
-        // tell shader to use vertex color data
-        glEnableVertexAttribArray(GLKVertexAttribColor);
-        // second parameter vertex color is 4 dimensional
-        glVertexAttribPointer(GLKVertexAttribColor, 4, GL_FLOAT, GL_FALSE, 0, self.vertexColors);
+        if (self.useConstantColor) {
+            effect.useConstantColor = YES;
+            effect.constantColor = self.color;
+        } else {
+            effect.useConstantColor = NO;
+            // tell shader to use vertex color data
+            glEnableVertexAttribArray(GLKVertexAttribColor);
+            // second parameter vertex color is 4 dimensional
+            glVertexAttribPointer(GLKVertexAttribColor, 4, GL_FLOAT, GL_FALSE, 0, self.vertexColors);
+        }
     }
     
     [effect prepareToDraw];
@@ -82,6 +113,9 @@
     glDisableVertexAttribArray(GLKVertexAttribPosition);
     if (!self.useConstantColor) {
         glDisableVertexAttribArray(GLKVertexAttribColor);
+    }
+    if (!texture) {
+        glDisableVertexAttribArray(GLKVertexAttribTexCoord0);
     }
 }
 
