@@ -12,7 +12,7 @@
  */
 
 /**
- @brief EEShape acts as an abstract class and should be subclassed
+ @brief EEShape acts as a template, similar to a java abstract class. It should be subclassed.
  */
 
 @interface EEShape : NSObject {
