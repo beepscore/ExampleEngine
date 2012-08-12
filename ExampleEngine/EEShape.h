@@ -28,9 +28,21 @@
 @property (readonly) GLKVector2 *vertices;
 
 /**
+ @brief NO - use vertex colors
+        YES - use constant color for entire shape
+        default is YES
+ */
+@property BOOL useConstantColor;
+
+/**
  @brief color of the shape
  */
 @property GLKVector4 color;
+
+/**
+ @brief vertex colors of the shape
+ */
+@property (readonly) GLKVector4 *vertexColors;
 
 - (void)renderInScene:(EEScene *)scene;
 
