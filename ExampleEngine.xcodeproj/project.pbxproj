@@ -25,6 +25,7 @@
 		DE9136D315D3927F0061C249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE9136D115D3927F0061C249 /* InfoPlist.strings */; };
 		DE9136D615D3927F0061C249 /* ExampleEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9136D515D3927F0061C249 /* ExampleEngineTests.m */; };
 		DEA0C89115D4EEE0005FCBCC /* EESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C89015D4EEE0005FCBCC /* EESceneController.m */; };
+		DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA238E815D750BD002534A4 /* RectangleScene.m */; };
 		DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 		DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFED8615D711B1008D6E6E /* EEShape.m */; };
@@ -67,6 +68,8 @@
 		DE9136D515D3927F0061C249 /* ExampleEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleEngineTests.m; sourceTree = "<group>"; };
 		DEA0C88F15D4EEE0005FCBCC /* EESceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESceneController.h; sourceTree = "<group>"; };
 		DEA0C89015D4EEE0005FCBCC /* EESceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESceneController.m; sourceTree = "<group>"; };
+		DEA238E715D750BD002534A4 /* RectangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleScene.h; sourceTree = "<group>"; };
+		DEA238E815D750BD002534A4 /* RectangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleScene.m; sourceTree = "<group>"; };
 		DEA3F1DA15D7209200BEF4E4 /* TriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleScene.h; sourceTree = "<group>"; };
 		DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
 		DECC4E0315D4D09700F4102C /* EEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEScene.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 			children = (
 				DECC4E0315D4D09700F4102C /* EEScene.h */,
 				DECC4E0415D4D09700F4102C /* EEScene.m */,
+				DEA238E715D750BD002534A4 /* RectangleScene.h */,
+				DEA238E815D750BD002534A4 /* RectangleScene.m */,
 				DEA3F1DA15D7209200BEF4E4 /* TriangleScene.h */,
 				DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */,
 			);
@@ -312,6 +317,7 @@
 				DE6089DB15D71E0900802560 /* EETriangle.m in Sources */,
 				DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */,
 				DE74A88E15D744AE00630A8D /* EERectangle.m in Sources */,
+				DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
