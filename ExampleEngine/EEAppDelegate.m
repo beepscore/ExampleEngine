@@ -29,7 +29,8 @@
     
     //scene = [[TriangleScene alloc] init];
     //scene = [[RectangleScene alloc] init];
-    scene = [[EllipseScene alloc] init];
+    //scene = [[EllipseScene alloc] init];
+    scene = [[HexagonScene alloc] init];
     scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
     
     return YES;
