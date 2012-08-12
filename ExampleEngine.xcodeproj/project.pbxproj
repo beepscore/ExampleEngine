@@ -29,6 +29,7 @@
 		DEA0C89115D4EEE0005FCBCC /* EESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0C89015D4EEE0005FCBCC /* EESceneController.m */; };
 		DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA238E815D750BD002534A4 /* RectangleScene.m */; };
 		DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */; };
+		DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DEACE9D615D773C80062E593 /* EERegularPolygon.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 		DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFED8615D711B1008D6E6E /* EEShape.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,8 @@
 		DEA238E815D750BD002534A4 /* RectangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleScene.m; sourceTree = "<group>"; };
 		DEA3F1DA15D7209200BEF4E4 /* TriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleScene.h; sourceTree = "<group>"; };
 		DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
+		DEACE9D515D773C80062E593 /* EERegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERegularPolygon.h; sourceTree = "<group>"; };
+		DEACE9D615D773C80062E593 /* EERegularPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EERegularPolygon.m; sourceTree = "<group>"; };
 		DECC4E0315D4D09700F4102C /* EEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEScene.h; sourceTree = "<group>"; };
 		DECC4E0415D4D09700F4102C /* EEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEScene.m; sourceTree = "<group>"; };
 		DEEFED8515D711B1008D6E6E /* EEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEShape.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				DE279D1615D7578C00245637 /* EEEllipse.m */,
 				DE74A88C15D744AE00630A8D /* EERectangle.h */,
 				DE74A88D15D744AE00630A8D /* EERectangle.m */,
+				DEACE9D515D773C80062E593 /* EERegularPolygon.h */,
+				DEACE9D615D773C80062E593 /* EERegularPolygon.m */,
 				DEEFED8515D711B1008D6E6E /* EEShape.h */,
 				DEEFED8615D711B1008D6E6E /* EEShape.m */,
 				DE6089D915D71E0900802560 /* EETriangle.h */,
@@ -338,6 +343,7 @@
 				DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */,
 				DE279D1715D7578C00245637 /* EEEllipse.m in Sources */,
 				DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */,
+				DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
