@@ -12,7 +12,10 @@
 
 @synthesize radius;
 
+#pragma mark - initializers
+// designated initializer
 - (id)initWithNumSides:(int)aNumSides {
+    // call super's designated initializer
     self = [super init];
     if (self) {
         _numSides = aNumSides;
@@ -20,6 +23,17 @@
     return self;
 }
 
+
+// When a class has it's own designated initializer,
+// override superclass' designated initializer (e.g. init) to call self's designated initializer.
+// This way, if someone accidentally calls super's designated initializer,
+// self's designated initializer will still be called. Ref Hillegass pg 57
+- (id)init {
+    return [self initWithNumSides:3];
+}
+
+
+#pragma mark -
 - (int)numVertices {
     return self.numSides;
 }
