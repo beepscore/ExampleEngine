@@ -9,6 +9,11 @@
 #import "EEAppDelegate.h"
 #import "EESceneController.h"
 
+#import "TriangleScene.h"
+//#import "RectangleScene.h"
+//#import "HexagonScene.h"
+//#import "EllipseScene.h"
+
 @implementation EEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,10 +32,10 @@
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     
-    //scene = [[TriangleScene alloc] init];
+    scene = [[TriangleScene alloc] init];
     //scene = [[RectangleScene alloc] init];
     //scene = [[EllipseScene alloc] init];
-    scene = [[HexagonScene alloc] init];
+    //scene = [[HexagonScene alloc] init];
     scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
     
     return YES;

@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-//#import "TriangleScene.h"
-//#import "RectangleScene.h"
-//#import "EllipseScene.h"
-#import "HexagonScene.h"
+@class TriangleScene;
+@class RectangleScene;
+@class HexagonScene;
+@class EllipseScene;
 
 @interface EEAppDelegate : UIResponder
     <UIApplicationDelegate, GLKViewDelegate, GLKViewControllerDelegate> {
-//        TriangleScene *scene;
+        TriangleScene *scene;
 //        RectangleScene *scene;
 //        EllipseScene *scene;
-        HexagonScene *scene;
+//        HexagonScene *scene;
     }
 
 @property (strong, nonatomic) UIWindow *window;
