@@ -23,8 +23,8 @@
 
 - (GLKVector2 *)vertices {
     if (nil == vertexData) {
-        // lazy instantiate
-        vertexData = [NSMutableData dataWithLength:sizeof(GLKVector2)*self.numVertices];
+        // lazy instantiate vertexData with sufficient length in bytes
+        vertexData = [NSMutableData dataWithLength:(sizeof(GLKVector2) * self.numVertices)];
     }
     return [vertexData mutableBytes];
 }
@@ -35,7 +35,7 @@
     
     // second parameter vertex position is 2 dimensional
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
-   
+    
     glDrawArrays(GL_TRIANGLE_FAN, 0, self.numVertices);
     // clean up
     glDisableVertexAttribArray(GLKVertexAttribPosition);
