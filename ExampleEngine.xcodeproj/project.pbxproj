@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE15CE8715D89DFC00A9F5F5 /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE15CE8615D89DFC00A9F5F5 /* sun.jpg */; };
 		DE15CE8B15D89E5C00A9F5F5 /* SunScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */; };
+		DE239DB415D8A2190031EFBE /* TexturedTriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE239DB315D8A2190031EFBE /* TexturedTriangleScene.m */; };
 		DE279D1715D7578C00245637 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE279D1615D7578C00245637 /* EEEllipse.m */; };
 		DE5A24D815D77E250063CA0B /* HexagonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A24D715D77E250063CA0B /* HexagonScene.m */; };
 		DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B09DF15D75B680043E4BC /* EllipseScene.m */; };
@@ -53,6 +54,8 @@
 		DE15CE8615D89DFC00A9F5F5 /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
 		DE15CE8915D89E5C00A9F5F5 /* SunScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunScene.h; sourceTree = "<group>"; };
 		DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunScene.m; sourceTree = "<group>"; };
+		DE239DB215D8A2190031EFBE /* TexturedTriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedTriangleScene.h; sourceTree = "<group>"; };
+		DE239DB315D8A2190031EFBE /* TexturedTriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TexturedTriangleScene.m; sourceTree = "<group>"; };
 		DE279D1515D7578C00245637 /* EEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEllipse.h; sourceTree = "<group>"; };
 		DE279D1615D7578C00245637 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
 		DE5A24D615D77E250063CA0B /* HexagonScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonScene.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 				DEB6216215D86B65005AC4D1 /* LandscapeScene.m */,
 				DE15CE8915D89E5C00A9F5F5 /* SunScene.h */,
 				DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */,
+				DE239DB215D8A2190031EFBE /* TexturedTriangleScene.h */,
+				DE239DB315D8A2190031EFBE /* TexturedTriangleScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				DE5A24D815D77E250063CA0B /* HexagonScene.m in Sources */,
 				DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */,
 				DE15CE8B15D89E5C00A9F5F5 /* SunScene.m in Sources */,
+				DE239DB415D8A2190031EFBE /* TexturedTriangleScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

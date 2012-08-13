@@ -13,7 +13,8 @@
 //@class HexagonScene;
 //@class EllipseScene;
 //@class LandscapeScene;
-@class SunScene;
+//@class SunScene;
+@class TexturedTriangleScene;
 
 @interface EEAppDelegate : UIResponder
     <UIApplicationDelegate, GLKViewDelegate, GLKViewControllerDelegate> {
@@ -22,7 +23,8 @@
 //        EllipseScene *scene;
 //        HexagonScene *scene;
         // LandscapeScene *scene;
-        SunScene *scene;
+        // SunScene *scene;
+        TexturedTriangleScene *scene;
     }
 
 @property (strong, nonatomic) UIWindow *window;
