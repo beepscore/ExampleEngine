@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE15CE8715D89DFC00A9F5F5 /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE15CE8615D89DFC00A9F5F5 /* sun.jpg */; };
+		DE15CE8B15D89E5C00A9F5F5 /* SunScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */; };
 		DE279D1715D7578C00245637 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE279D1615D7578C00245637 /* EEEllipse.m */; };
 		DE5A24D815D77E250063CA0B /* HexagonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A24D715D77E250063CA0B /* HexagonScene.m */; };
 		DE5B09E015D75B680043E4BC /* EllipseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B09DF15D75B680043E4BC /* EllipseScene.m */; };
@@ -48,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE15CE8615D89DFC00A9F5F5 /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
+		DE15CE8915D89E5C00A9F5F5 /* SunScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunScene.h; sourceTree = "<group>"; };
+		DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunScene.m; sourceTree = "<group>"; };
 		DE279D1515D7578C00245637 /* EEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEllipse.h; sourceTree = "<group>"; };
 		DE279D1615D7578C00245637 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
 		DE5A24D615D77E250063CA0B /* HexagonScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonScene.h; sourceTree = "<group>"; };
@@ -233,6 +238,8 @@
 				DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */,
 				DEB6216115D86B65005AC4D1 /* LandscapeScene.h */,
 				DEB6216215D86B65005AC4D1 /* LandscapeScene.m */,
+				DE15CE8915D89E5C00A9F5F5 /* SunScene.h */,
+				DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -240,6 +247,7 @@
 		DEFA130615D863F300C426D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE15CE8615D89DFC00A9F5F5 /* sun.jpg */,
 				DEFA130715D863F300C426D2 /* russian_rocket.png */,
 			);
 			path = Resources;
@@ -320,6 +328,7 @@
 				DE9136BB15D3927F0061C249 /* InfoPlist.strings in Resources */,
 				DE7C1B5415D3942C006C41D6 /* README.md in Resources */,
 				DEFA130815D863F300C426D2 /* russian_rocket.png in Resources */,
+				DE15CE8715D89DFC00A9F5F5 /* sun.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +377,7 @@
 				DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */,
 				DE5A24D815D77E250063CA0B /* HexagonScene.m in Sources */,
 				DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */,
+				DE15CE8B15D89E5C00A9F5F5 /* SunScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
