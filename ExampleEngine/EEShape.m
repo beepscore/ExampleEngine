@@ -81,6 +81,10 @@
 
 - (void)renderInScene:(EEScene *)scene {
     
+    // turn on alpha transparency
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     // TODO: Move effect creation out of frame loop.
     effect.transform.projectionMatrix = scene.projectionMatrix;
     
@@ -113,6 +117,7 @@
     glDrawArrays(GL_TRIANGLE_FAN, 0, self.numVertices);
     
     // clean up
+    glDisable(GL_BLEND);
     glDisableVertexAttribArray(GLKVertexAttribPosition);
     if (!self.useConstantColor) {
         glDisableVertexAttribArray(GLKVertexAttribColor);
