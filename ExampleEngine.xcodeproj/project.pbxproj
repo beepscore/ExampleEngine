@@ -34,6 +34,9 @@
 		DEA238E915D750BD002534A4 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA238E815D750BD002534A4 /* RectangleScene.m */; };
 		DEA3F1DC15D7209200BEF4E4 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */; };
 		DEACE9D715D773C80062E593 /* EERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DEACE9D615D773C80062E593 /* EERegularPolygon.m */; };
+		DEAF44D515D8A89C0086A3B7 /* EESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF44D415D8A89C0086A3B7 /* EESprite.m */; };
+		DEAF44D915D8AB430086A3B7 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF44D815D8AB430086A3B7 /* SpriteScene.m */; };
+		DEAF44DB15D8AD7D0086A3B7 /* my_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = DEAF44DA15D8AD7D0086A3B7 /* my_sprite.png */; };
 		DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB6216215D86B65005AC4D1 /* LandscapeScene.m */; };
 		DECC4E0515D4D09700F4102C /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC4E0415D4D09700F4102C /* EEScene.m */; };
 		DEEFED8715D711B1008D6E6E /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFED8615D711B1008D6E6E /* EEShape.m */; };
@@ -94,6 +97,11 @@
 		DEA3F1DB15D7209200BEF4E4 /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
 		DEACE9D515D773C80062E593 /* EERegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERegularPolygon.h; sourceTree = "<group>"; };
 		DEACE9D615D773C80062E593 /* EERegularPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EERegularPolygon.m; sourceTree = "<group>"; };
+		DEAF44D315D8A89C0086A3B7 /* EESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESprite.h; sourceTree = "<group>"; };
+		DEAF44D415D8A89C0086A3B7 /* EESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESprite.m; sourceTree = "<group>"; };
+		DEAF44D715D8AB430086A3B7 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
+		DEAF44D815D8AB430086A3B7 /* SpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteScene.m; sourceTree = "<group>"; };
+		DEAF44DA15D8AD7D0086A3B7 /* my_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_sprite.png; sourceTree = "<group>"; };
 		DEB6216115D86B65005AC4D1 /* LandscapeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeScene.h; sourceTree = "<group>"; };
 		DEB6216215D86B65005AC4D1 /* LandscapeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeScene.m; sourceTree = "<group>"; };
 		DECC4E0315D4D09700F4102C /* EEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEScene.h; sourceTree = "<group>"; };
@@ -143,6 +151,8 @@
 				DEACE9D615D773C80062E593 /* EERegularPolygon.m */,
 				DE6089D915D71E0900802560 /* EETriangle.h */,
 				DE6089DA15D71E0900802560 /* EETriangle.m */,
+				DEAF44D315D8A89C0086A3B7 /* EESprite.h */,
+				DEAF44D415D8A89C0086A3B7 /* EESprite.m */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -245,6 +255,8 @@
 				DE15CE8A15D89E5C00A9F5F5 /* SunScene.m */,
 				DE239DB215D8A2190031EFBE /* TexturedTriangleScene.h */,
 				DE239DB315D8A2190031EFBE /* TexturedTriangleScene.m */,
+				DEAF44D715D8AB430086A3B7 /* SpriteScene.h */,
+				DEAF44D815D8AB430086A3B7 /* SpriteScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -252,6 +264,7 @@
 		DEFA130615D863F300C426D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEAF44DA15D8AD7D0086A3B7 /* my_sprite.png */,
 				DE15CE8615D89DFC00A9F5F5 /* sun.jpg */,
 				DEFA130715D863F300C426D2 /* russian_rocket.png */,
 			);
@@ -334,6 +347,7 @@
 				DE7C1B5415D3942C006C41D6 /* README.md in Resources */,
 				DEFA130815D863F300C426D2 /* russian_rocket.png in Resources */,
 				DE15CE8715D89DFC00A9F5F5 /* sun.jpg in Resources */,
+				DEAF44DB15D8AD7D0086A3B7 /* my_sprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +398,8 @@
 				DEB6216315D86B65005AC4D1 /* LandscapeScene.m in Sources */,
 				DE15CE8B15D89E5C00A9F5F5 /* SunScene.m in Sources */,
 				DE239DB415D8A2190031EFBE /* TexturedTriangleScene.m in Sources */,
+				DEAF44D515D8A89C0086A3B7 /* EESprite.m in Sources */,
+				DEAF44D915D8AB430086A3B7 /* SpriteScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
