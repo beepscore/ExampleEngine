@@ -22,6 +22,7 @@
     if (self) {
         sprite = [[EESprite alloc] initWithImage:[UIImage imageNamed:@"my_sprite.png"]
                                       pointRatio:100];
+        sprite.position = GLKVector2Make(2, -1);
     }
     return self;
 }

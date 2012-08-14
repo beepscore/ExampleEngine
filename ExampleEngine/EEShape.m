@@ -88,6 +88,9 @@
     // TODO: Move effect creation out of frame loop.
     effect.transform.projectionMatrix = scene.projectionMatrix;
     
+    // position object in world space
+    effect.transform.modelviewMatrix = GLKMatrix4MakeTranslation(self.position.x, self.position.y, 0);
+    
     if (texture) {
         effect.texture2d0.envMode = GLKTextureEnvModeReplace;
         effect.texture2d0.target = GLKTextureTarget2D;

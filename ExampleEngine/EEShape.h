@@ -50,6 +50,11 @@
  */
 @property (readonly) GLKVector2 *textureCoordinates;
 
+/**
+ @brief location
+ */
+@property GLKVector2 position;
+
 - (void)setTextureImage:(UIImage *)image;
 
 - (void)renderInScene:(EEScene *)scene;
