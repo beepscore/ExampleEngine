@@ -55,6 +55,11 @@
  */
 @property GLKVector2 position;
 
+/**
+ @brief rotation
+ */
+@property float rotation;
+
 - (void)setTextureImage:(UIImage *)image;
 
 - (void)renderInScene:(EEScene *)scene;
