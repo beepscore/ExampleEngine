@@ -51,7 +51,7 @@
 @property (readonly) GLKVector2 *textureCoordinates;
 
 /**
- @brief location
+ @brief position
  */
 @property GLKVector2 position;
 
@@ -59,6 +59,11 @@
  @brief rotation
  */
 @property float rotation;
+
+/**
+ @brief scale
+ */
+@property GLKVector2 scale;
 
 - (void)setTextureImage:(UIImage *)image;
 

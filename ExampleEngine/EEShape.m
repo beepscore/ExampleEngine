@@ -28,6 +28,11 @@
         // GLKBaseEffect uses OpenGL ES 2 shaders to mimic OpenGL ES 1.1
         effect = [[GLKBaseEffect alloc] init];
         self.useConstantColor = YES;
+        
+        // set default transforms
+        self.scale = GLKVector2Make(1.0, 1.0);
+        self.rotation = 0.0;
+        self.position = GLKVector2Make(0.0, 0.0);
     }
     return self;
 }
@@ -89,9 +94,11 @@
     effect.transform.projectionMatrix = scene.projectionMatrix;
     
     // In matrix multiplication, second matrix is applied first.
-    // rotate, then translate.
-    effect.transform.modelviewMatrix =
+    // scale, then rotate, then translate.
+    GLKMatrix4 modelviewMatrix =
         GLKMatrix4Multiply(GLKMatrix4MakeTranslation(self.position.x, self.position.y, 0), GLKMatrix4MakeRotation(self.rotation, 0, 0, 1));
+    effect.transform.modelviewMatrix =
+        GLKMatrix4Multiply(modelviewMatrix, GLKMatrix4MakeScale(self.scale.x, self.scale.y, 1));
     
     if (texture) {
         effect.texture2d0.envMode = GLKTextureEnvModeReplace;
