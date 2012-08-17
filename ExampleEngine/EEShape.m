@@ -29,6 +29,9 @@
         effect = [[GLKBaseEffect alloc] init];
         self.useConstantColor = YES;
         
+        self.color = GLKVector4Make(1, 1, 1, 1);
+        texture = nil;
+        
         // set default transforms
         self.scale = GLKVector2Make(1.0, 1.0);
         self.rotation = 0.0;

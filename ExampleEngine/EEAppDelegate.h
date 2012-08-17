@@ -9,24 +9,24 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 //@class TriangleScene;
-//@class RectangleScene;
+@class RectangleScene;
 //@class HexagonScene;
 //@class EllipseScene;
 //@class LandscapeScene;
 //@class SunScene;
 //@class TexturedTriangleScene;
-@class SpriteScene;
+//@class SpriteScene;
 
 @interface EEAppDelegate : UIResponder
     <UIApplicationDelegate, GLKViewDelegate, GLKViewControllerDelegate> {
 //        TriangleScene *scene;
-//        RectangleScene *scene;
+        RectangleScene *scene;
 //        EllipseScene *scene;
 //        HexagonScene *scene;
         // LandscapeScene *scene;
         // SunScene *scene;
         // TexturedTriangleScene *scene;
-        SpriteScene *scene;
+//        SpriteScene *scene;
     }
 
 @property (strong, nonatomic) UIWindow *window;

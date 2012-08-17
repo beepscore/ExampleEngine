@@ -10,13 +10,13 @@
 #import "EESceneController.h"
 
 //#import "TriangleScene.h"
-//#import "RectangleScene.h"
+#import "RectangleScene.h"
 //#import "HexagonScene.h"
 //#import "EllipseScene.h"
 //#import "LandscapeScene.h"
 //#import "SunScene.h"
 //#import "TexturedTriangleScene.h"
-#import "SpriteScene.h"
+//#import "SpriteScene.h"
 
 @implementation EEAppDelegate
 
@@ -36,7 +36,7 @@
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     
-    scene = [[SpriteScene alloc] init];
+    scene = [[RectangleScene alloc] init];
     scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
     
     return YES;
